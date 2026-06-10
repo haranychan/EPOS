@@ -1,5 +1,5 @@
 # EPOS
-[An evolutionary algorithm assisted by an Ensemble of Pareto-optimal Surrogate models]()
+[An evolutionary algorithm assisted by an Ensemble of Pareto-optimal Surrogate models](https://doi.org/10.1109/TCYB.2026.3702665)
 
 - This is an open-source code of EPOS implemented in MATLAB.
 
@@ -18,7 +18,7 @@
 ## Copyright
 
 The copyright of the EPOS codes belongs to the authors. You are free to use the codes for research purposes. Please refer to the following article; 
-> _Kei Nishihara, Yaochu Jin, and Masaya Nakata, “An Evolutionary Algorithm Assisted by An Ensemble of Pareto-Optimal Surrogate Models,” in IEEE Trans. Cybern., Month. 2026, pp. XXXX–XXXX._
+> _Kei Nishihara, Yaochu Jin, and Masaya Nakata, “An Evolutionary Algorithm Assisted by An Ensemble of Pareto-Optimal Surrogate Models,” in IEEE Trans. Cybern., Month. 2026, pp. XXXX–XXXX, accepted._
 
 
 ```
@@ -31,6 +31,6 @@ The copyright of the EPOS codes belongs to the authors. You are free to use the 
   pages      = "XXXX--XXXX",
   month      =  month,
   year       =  2026,
-  doi        = "10.1109/TCYB.2026.XXXXXXX"
+  doi        = "10.1109/TCYB.2026.3702665"
 }
 ```
