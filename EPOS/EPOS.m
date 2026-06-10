@@ -1,5 +1,5 @@
 classdef EPOS < ALGORITHM
-% <2025> <single> <real/integer> <expensive/none>
+% <2026> <single> <real/integer> <expensive/none>
 % An Evolutionary Algorithm Assisted by An Ensemble of Pareto-Optimal Surrogate Models
 % N             --- 100   --- Population size of DE
 % F             --- 0.5   --- Scaling factor of DE
@@ -15,9 +15,9 @@ classdef EPOS < ALGORITHM
 %------------------------------- Reference --------------------------------
 % K. Nishihara, Y. Jin, and M. Nakata, "An Evolutionary Algorithm Assisted 
 % by An Ensemble of Pareto-Optimal Surrogate Models," IEEE Trans. Cybern.,
-% under review, 2025.
+% accepted, 2026.
 %------------------------------- Copyright --------------------------------
-% Copyright (c) 2025 BIMK Group. You are free to use the PlatEMO for
+% Copyright (c) 2026 BIMK Group. You are free to use the PlatEMO for
 % research purposes. All publications which use this platform or any code
 % in the platform should acknowledge the use of "PlatEMO" and reference "Ye
 % Tian, Ran Cheng, Xingyi Zhang, and Yaochu Jin, PlatEMO: A MATLAB platform
