@@ -23,7 +23,7 @@ The copyright of the EPOS codes belongs to the authors. You are free to use the 
 
 ```
 @article{nishihara2026ensemble,
-  title      = "{An Evolutionary Algorithm Assisted by An Ensemble of Pareto-Optimal Surrogate Models}",
+  title      = "{An Evolutionary Algorithm Assisted by an Ensemble of Pareto-Optimal Surrogate Models}",
   author     = "Nishihara, Kei and Jin, Yaochu and Nakata, Masaya",
   journal    = "IEEE Trans. Cybern.",
   volume     =  XX,
