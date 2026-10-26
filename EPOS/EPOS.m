@@ -1,6 +1,6 @@
 classdef EPOS < ALGORITHM
 % <2026> <single> <real/integer> <expensive/none>
-% An Evolutionary Algorithm Assisted by An Ensemble of Pareto-Optimal Surrogate Models
+% An Evolutionary Algorithm Assisted by an Ensemble of Pareto-Optimal Surrogate Models
 % N             --- 100   --- Population size of DE
 % F             --- 0.5   --- Scaling factor of DE
 % CR            --- 0.9   --- Crossover rate of DE
@@ -14,8 +14,8 @@ classdef EPOS < ALGORITHM
 
 %------------------------------- Reference --------------------------------
 % K. Nishihara, Y. Jin, and M. Nakata, "An Evolutionary Algorithm Assisted 
-% by An Ensemble of Pareto-Optimal Surrogate Models," IEEE Trans. Cybern.,
-% accepted, 2026.
+% by an Ensemble of Pareto-Optimal Surrogate Models," IEEE Trans. Cybern., 
+% vol. 56, no. 11, pp. 6202–6215, June 2026.
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2026 BIMK Group. You are free to use the PlatEMO for
 % research purposes. All publications which use this platform or any code
@@ -35,7 +35,7 @@ classdef EPOS < ALGORITHM
             
             %% Generate random population
             PopDec         = UniformPoint(N, D, 'Latin');
-            Population     = Problem.Evaluation(repmat(Problem.upper - Problem.lower, N, 1) .* PopDec + repmat(Problem.lower, N, 1), [repmat(Algorithm.metric.runtime, N, 1)]);
+            Population     = Problem.Evaluation(repmat(Problem.upper - Problem.lower, N, 1) .* PopDec + repmat(Problem.lower, N, 1));
             Arc            = Population;
 
             % Archive
@@ -117,7 +117,7 @@ classdef EPOS < ALGORITHM
                 for i = 1:size(idx, 1)
                     % Evaluate solutions
                     offspringDec = cand(idx(i), :);
-                    offspring = Problem.Evaluation(offspringDec, [Algorithm.metric.runtime]);
+                    offspring = Problem.Evaluation(offspringDec);
                     Arc       = [Arc, offspring];
                     Algorithm.NotTerminated(Arc);
     
