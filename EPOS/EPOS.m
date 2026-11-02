@@ -13,9 +13,9 @@ classdef EPOS < ALGORITHM
 % LCB_a         --- 2     --- Coefficient in LCB
 
 %------------------------------- Reference --------------------------------
-% K. Nishihara, Y. Jin, and M. Nakata, "An Evolutionary Algorithm Assisted 
-% by an Ensemble of Pareto-Optimal Surrogate Models," IEEE Trans. Cybern., 
-% vol. 56, no. 11, pp. 6202–6215, June 2026.
+% K. Nishihara, Y. Jin, and M. Nakata. An Evolutionary Algorithm Assisted 
+% by an Ensemble of Pareto-Optimal Surrogate Models. IEEE Transactions on 
+% Cybernetics, 2026, 56(11): 6202–6215.
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2026 BIMK Group. You are free to use the PlatEMO for
 % research purposes. All publications which use this platform or any code
@@ -24,6 +24,8 @@ classdef EPOS < ALGORITHM
 % for evolutionary multi-objective optimization [educational forum], IEEE
 % Computational Intelligence Magazine, 2017, 12(4): 73-87".
 %--------------------------------------------------------------------------
+
+% This function is written by Kei Nishihara (email: nishihara-kei-pv@ynu.ac.jp)
 
     methods
         function main(Algorithm,Problem)
@@ -61,7 +63,7 @@ classdef EPOS < ALGORITHM
                 pair = pdist2(train_Xs, train_Xs);
                 MOEA_lower = [train_size/2, min(nonzeros(pair))]; MOEA_upper = [train_size, max(nonzeros(pair))];
                 
-                % MOEA initalization
+                % MOEA initialization
                 PopDec     = UniformPoint(MOEA_N,2,'Latin');
                 PopDec     = repmat(MOEA_upper-MOEA_lower,MOEA_N,1).*PopDec+repmat(MOEA_lower,MOEA_N,1);
                 surrs      = cell(MOEA_N, 1); acc = zeros(MOEA_N, 1); cmp = zeros(MOEA_N, 1);
