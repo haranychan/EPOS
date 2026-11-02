@@ -1,5 +1,5 @@
 classdef EPOS < ALGORITHM
-% <2026> <single> <real/integer> <expensive/none>
+% <2026> <single> <real/integer> <expensive>
 % An Evolutionary Algorithm Assisted by an Ensemble of Pareto-Optimal Surrogate Models
 % N             --- 100   --- Population size of DE
 % F             --- 0.5   --- Scaling factor of DE
